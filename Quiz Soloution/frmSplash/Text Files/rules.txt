@@ -1,0 +1,23 @@
+﻿Quiz Rules
+
+Rule 1
+All Multiple choice questions will only let you select one Awnser.
+
+Rule 2
+All Drag And Drop functionality Can Be Repeated.
+
+Rule 3
+All Questions carry Equal Marks
+
+Rule 4
+No Use Of Internet is Permitted
+
+Youre Quiz Instructions
+
+Player Selection
+On this form you are expected to:
+1: Type In Your Name
+2: Select one of three game Levels from the drop dow list box
+3: Drag One Of the 6 player icons to the Red Picture Box
+
+The Date of the quiz is automattically added once you drag and drop a player icon

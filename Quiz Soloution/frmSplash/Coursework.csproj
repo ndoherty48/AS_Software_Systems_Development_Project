@@ -1,0 +1,438 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{BED0E38B-29CD-4335-8646-E7E280E49251}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>frmSplash</RootNamespace>
+    <AssemblyName>GCSE I.C.T Quiz 2015</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>E:\GCE Software Development\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>2</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>2A50F783650D387D0516580CDCD4F32482A9B5B2</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>Coursework_TemporaryKey.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>true</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>true</SignManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>logo_FN9_icon.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject>
+    </StartupObject>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.IO.Compression.FileSystem" />
+    <Reference Include="System.Messaging" />
+    <Reference Include="System.Speech" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Other Forms\frmFinish.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Other Forms\frmFinish.Designer.cs">
+      <DependentUpon>frmFinish.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Other Forms\FrmFinishCertificate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Other Forms\FrmFinishCertificate.Designer.cs">
+      <DependentUpon>FrmFinishCertificate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Other Forms\frmLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Other Forms\frmLogin.Designer.cs">
+      <DependentUpon>frmLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Other Forms\frmLoginRegister.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Other Forms\frmLoginRegister.Designer.cs">
+      <DependentUpon>frmLoginRegister.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Advanced Questions\frmAdvanced4.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Advanced Questions\frmAdvanced4.Designer.cs">
+      <DependentUpon>frmAdvanced4.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Advanced Questions\frmAdvanced5.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Advanced Questions\frmAdvanced5.Designer.cs">
+      <DependentUpon>frmAdvanced5.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Beginner Questions\frmBeginner4.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Beginner Questions\frmBeginner4.Designer.cs">
+      <DependentUpon>frmBeginner4.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Beginner Questions\frmBeginner5.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Beginner Questions\frmBeginner5.Designer.cs">
+      <DependentUpon>frmBeginner5.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Intermediate Questions\frmIntermediate5.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Intermediate Questions\frmIntermediate5.Designer.cs">
+      <DependentUpon>frmIntermediate5.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Other Forms\frmSplash.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Other Forms\frmSplash.Designer.cs">
+      <DependentUpon>frmSplash.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Other Forms\frmDescriptionRules.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Other Forms\frmDescriptionRules.Designer.cs">
+      <DependentUpon>frmDescriptionRules.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Other Forms\frmPlayerSelectionNew.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Other Forms\frmPlayerSelectionNew.Designer.cs">
+      <DependentUpon>frmPlayerSelectionNew.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Beginner Questions\frmBeginner1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Beginner Questions\frmBeginner1.Designer.cs">
+      <DependentUpon>frmBeginner1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Advanced Questions\frmAdvanced3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Advanced Questions\frmAdvanced3.Designer.cs">
+      <DependentUpon>frmAdvanced3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Intermediate Questions\frmIntermediate1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Intermediate Questions\frmIntermediate1.Designer.cs">
+      <DependentUpon>frmIntermediate1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Advanced Questions\frmAdvanced1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Advanced Questions\frmAdvanced1.Designer.cs">
+      <DependentUpon>frmAdvanced1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Beginner Questions\frmBeginner3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Beginner Questions\frmBeginner3.Designer.cs">
+      <DependentUpon>frmBeginner3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Intermediate Questions\frmIntermediate2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Intermediate Questions\frmIntermediate2.Designer.cs">
+      <DependentUpon>frmIntermediate2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Intermediate Questions\frmIntermediate3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Intermediate Questions\frmIntermediate3.Designer.cs">
+      <DependentUpon>frmIntermediate3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Advanced Questions\frmAdvanced2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Advanced Questions\frmAdvanced2.Designer.cs">
+      <DependentUpon>frmAdvanced2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Intermediate Questions\frmIntermediate4.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Intermediate Questions\frmIntermediate4.Designer.cs">
+      <DependentUpon>frmIntermediate4.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GlobalQuizValues.cs" />
+    <Compile Include="Other Forms\IconSelect.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Other Forms\IconSelect.Designer.cs">
+      <DependentUpon>IconSelect.cs</DependentUpon>
+    </Compile>
+    <Compile Include="playerDetails.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Beginner Questions\frmBeginner2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Beginner Questions\frmBeginner2.Designer.cs">
+      <DependentUpon>frmBeginner2.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Other Forms\frmFinish.resx">
+      <DependentUpon>frmFinish.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Other Forms\FrmFinishCertificate.resx">
+      <DependentUpon>FrmFinishCertificate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Other Forms\frmLogin.resx">
+      <DependentUpon>frmLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Other Forms\frmLoginRegister.resx">
+      <DependentUpon>frmLoginRegister.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Advanced Questions\frmAdvanced4.resx">
+      <DependentUpon>frmAdvanced4.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Advanced Questions\frmAdvanced5.resx">
+      <DependentUpon>frmAdvanced5.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Beginner Questions\frmBeginner4.resx">
+      <DependentUpon>frmBeginner4.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Beginner Questions\frmBeginner5.resx">
+      <DependentUpon>frmBeginner5.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Intermediate Questions\frmIntermediate5.resx">
+      <DependentUpon>frmIntermediate5.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Other Forms\frmSplash.resx">
+      <DependentUpon>frmSplash.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Other Forms\frmDescriptionRules.resx">
+      <DependentUpon>frmDescriptionRules.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Other Forms\frmPlayerSelectionNew.resx">
+      <DependentUpon>frmPlayerSelectionNew.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Beginner Questions\frmBeginner1.resx">
+      <DependentUpon>frmBeginner1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Advanced Questions\frmAdvanced3.resx">
+      <DependentUpon>frmAdvanced3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Intermediate Questions\frmIntermediate1.resx">
+      <DependentUpon>frmIntermediate1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Advanced Questions\frmAdvanced1.resx">
+      <DependentUpon>frmAdvanced1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Beginner Questions\frmBeginner3.resx">
+      <DependentUpon>frmBeginner3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Intermediate Questions\frmIntermediate2.resx">
+      <DependentUpon>frmIntermediate2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Intermediate Questions\frmIntermediate3.resx">
+      <DependentUpon>frmIntermediate3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Advanced Questions\frmAdvanced2.resx">
+      <DependentUpon>frmAdvanced2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Intermediate Questions\frmIntermediate4.resx">
+      <DependentUpon>frmIntermediate4.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Other Forms\IconSelect.resx">
+      <DependentUpon>IconSelect.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="Beginner Questions\frmBeginner2.resx">
+      <DependentUpon>frmBeginner2.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\DataSources\Form1.datasource" />
+    <None Include="Properties\DataSources\frmAdvanced1.datasource" />
+    <None Include="Properties\DataSources\frmAdvanced2.datasource" />
+    <None Include="Properties\DataSources\frmAdvanced3.datasource" />
+    <None Include="Properties\DataSources\frmAdvanced4.datasource" />
+    <None Include="Properties\DataSources\frmAdvanced5.datasource" />
+    <None Include="Properties\DataSources\frmBeginner1.datasource" />
+    <None Include="Properties\DataSources\frmBeginner2.datasource" />
+    <None Include="Properties\DataSources\frmBeginner3.datasource" />
+    <None Include="Properties\DataSources\frmBeginner4.datasource" />
+    <None Include="Properties\DataSources\frmBeginner5.datasource" />
+    <None Include="Properties\DataSources\frmDescriptionRules.datasource" />
+    <None Include="Properties\DataSources\frmFinish.datasource" />
+    <None Include="Properties\DataSources\FrmFinishCertificate.datasource" />
+    <None Include="Properties\DataSources\frmIntermediate1.datasource" />
+    <None Include="Properties\DataSources\frmIntermediate2.datasource" />
+    <None Include="Properties\DataSources\frmIntermediate3.datasource" />
+    <None Include="Properties\DataSources\frmIntermediate4.datasource" />
+    <None Include="Properties\DataSources\frmIntermediate5.datasource" />
+    <None Include="Properties\DataSources\frmLogin.datasource" />
+    <None Include="Properties\DataSources\frmLoginRegister.datasource" />
+    <None Include="Properties\DataSources\frmPlayerSelectionNew.datasource" />
+    <None Include="Properties\DataSources\frmSplash.Properties.Resources.datasource" />
+    <None Include="Properties\DataSources\frmSplash.Properties.Settings.datasource" />
+    <None Include="Properties\DataSources\GlobalQuizValues.datasource" />
+    <None Include="Properties\DataSources\Icon_Select.datasource" />
+    <None Include="Properties\DataSources\playerDetails.datasource" />
+    <None Include="Properties\DataSources\Program.datasource" />
+    <None Include="Properties\DataSources\RandomQuestions.datasource" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <None Include="Resources\bitcoin.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <Content Include="logo_FN9_icon.ico" />
+    <None Include="Resources\dragHere.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <Content Include="Text Files\Feedback.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Text Files\logininfo.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Text Files\Passwords.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Text Files\usernames.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logo.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Pictures\untitled.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Pictures\DeathStroke.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Pictures\flash.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Pictures\ras.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Pictures\the atom.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\reverse flash icon.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Resources\certificate.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <Content Include="Text Files\txtScores.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <None Include="Pictures\Background.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Pictures\Next.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <Content Include="Text Files\rules.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.5">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.5 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

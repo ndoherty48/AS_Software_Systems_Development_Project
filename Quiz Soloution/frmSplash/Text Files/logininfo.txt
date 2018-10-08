@@ -1,0 +1,25 @@
+﻿How To Login
+1. Type In Username into the Name Field
+
+2. Enter The Corresponding Password to the Username
+
+3. Select Which Level you wish to participate in
+
+4. Click on The Choose Icon Button
+
+5. Drag the selected Icon to the Red Box and press the Select Icon button
+
+6. The Login Button is now active and you can press it to Login
+
+How To Register
+1. Enter your Username in player name Box
+
+2. Enter The Password you wish to use in the Password Box
+
+3. Select the level you wish to participate in (you can change this when you login at a later date)
+
+4. Drag your Chosen Icon to the Red box
+
+5. The Date will automatically appear in between the Username and Password
+
+6. Press The Register Button
